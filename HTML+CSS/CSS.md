@@ -160,3 +160,53 @@
 
 - sticky
   - 스크롤에 따라 static => fixed로 변경
+
+
+
+## Float
+
+- 박스를 왼쪽 혹은 오른쪽으로 이동시켜 텍스트를 포함한 인라인 요소들이 주변을 wrapping 하도록 함
+- 요소가 Normal flow를 벗어나도록 함
+- none, left, right
+
+
+
+## Flexbox
+
+- 행열 형태로 아이템을 배치하는 1차원 레이아웃 모델
+- 축
+  - main axis (메인 축)
+  - cross axis (교차 축)
+- 구성 요소
+  - Flex Containter (부모 요소)
+    - flexbox 레이아웃을 형성하는 기본 모델
+    - Flex Item이 놓여있는 영역
+    - display 속성을 flex 혹은 inline-flex로 지정
+  - Flex Item (자식 요소)
+    - 컨테이너에 속해 있는 컨텐츠(박스)
+
+![image-20220804091423845](CSS.assets/image-20220804091423845.png)
+
+
+
+### 속성
+
+- 배치 설정
+  - flex-direction
+    - row, row-reverse, column, column-reverse
+    - Main axis 기준 방향 설정
+  - flex-wrap
+    - wrap, nowrap
+- 공간 나누기
+  - justify-content (main axis)
+    - flex-start, flex-end, center, space-between, space-around, space-evenly
+  - align-content (cross axis)
+    - flex-start, flex-end, center, space-between, space-around, space-evenly
+- 정렬
+  - align-itmes (모든 아이템을 cross axis 기준으로)
+    - stretch, flex-start, flex-end, center, baseline
+  - align-self (개별 아이템)
+    - stretch, flex-start, flex-end, center
+- 기타 속성
+  - flex-gorw : 남은 영역을 아이템에 분배
+  - order : 배치 순서
