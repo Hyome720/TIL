@@ -44,7 +44,7 @@
 ### Hardware representation
 
 - 이진법 (Binary digits, bits)
-- instruction과 데이터를 암호화
+- 명령어와 데이터를 암호화
 
 ![image-20220807165712015](01_Abstraction_and_Technology.assets/image-20220807165712015.png)
 
