@@ -104,3 +104,37 @@ export default App;
 
 - HTML과 달리 input, br 등 닫는 태그가 필요
   - 내용이 없을 경우 **<input />**처럼도 작성 가능 
+
+
+
+## css 적용
+
+> 3가지 방법이 존재
+
+1. Inline style로 작성
+   - 잘 사용하지 않음
+
+```
+export default function <functionName>() {
+	return (
+		<div>
+			<h1 style={
+			{
+				color: "red",
+				backgroundColor: "blue",
+				marginBottom: "30px",
+				opacity: 0.5,
+			}}
+				Hello
+			</h1>			
+		</div>
+	);
+}
+```
+
+2. index.css / App.css 파일 활용
+   - 요소 이름이 중복되어 에러가 발생할 수 있음
+
+3. import styles from "./{파일명}.module.css" 파일 생성
+   - className={styles.{클래스명}} 으로 작성
+   - 동일한 클래스명이어도 다른 css 적용 가능

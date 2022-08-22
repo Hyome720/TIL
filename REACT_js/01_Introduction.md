@@ -6,6 +6,33 @@
 
 
 
+#### 리액트 프로젝트의 생성
+
+- yarn이 설치되어 있다면
+
+```
+$ yarn create react-app <project name>
+```
+
+- 자동으로 필요한 파일 생성
+- node_modules 폴더
+  - 지우더라도
+    - package.json 파일이 손상되지 않았다면
+    - $ npm install을 통해 재설치 가능
+  - git에 올리지 않음
+
+
+
+#### 리액트 프로젝트의 실행
+
+- 프로젝트가 있는 디렉토리에서
+
+```
+$ yarn start
+```
+
+
+
 ## 1 - 1. 초기 렌더링
 
 - render() { ... }
